@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio tablero</title>
+</head>
+
+<body>
+    <script>
+        window.alert("Vamos a crear un tablero.");
+        let filas; // Variables para número de filas
+        filas = parseInt(prompt("Introduce el número de filas "));
+        let resultadox = ""
+        let resultadoy = ""
+
+        for (let i = 0; i < filas; i = i + 1) {
+
+
+            if (i % 2 == 0)
+            {
+                for (let j = 0; j < filas; j = j + 1)
+                {
+                    if (j % 2 == 0)
+                    {
+                            resultadox += "X"
+                    }
+                    else
+                    {
+                        resultadox += "O"
+                    }
+                }
+                console.log (resultadox)
+                resultadox = ""
+            }
+        else
+        {
+            for (let j = 0; j < filas; j = j + 1) {
+                if (j % 2 == 0){
+                    resultadoy += "O"
+                }
+                else{
+                    resultadoy += "X"
+                }
+            }
+            console.log (resultadoy)
+            resultadoy = ""
+        }
+
+
+
+        }
+
+            
+    
+    </script>
+</body>
+
+</html>
