@@ -10,43 +10,54 @@
 
 <body>
     <script>
-        window.alert("Vamos a crear un tablero.");
+        window.alert("Vamos a crear un tablero."); // Mensaje principal
         let filas; // Variables para número de filas
-        filas = parseInt(prompt("Introduce el número de filas "));
-        let resultadox = ""
-        let resultadoy = ""
+        filas = parseInt(prompt("Introduce el número de filas y caracteres del tablero:")); // Mensaje usuario
+        let resultadox = "" // Variable para filas impares
+        let resultadoy = "" // Variable para filar pares
 
-        for (let i = 0; i < filas; i = i + 1) {
+        for (let i = 0; i < filas; i = i + 1) { // Creamos variable i: será el número de bucle1
+        /* i es 0
+        la i tiene que ser MENOR al número de filas introducidas por el usuario
+        al acabar el bucle se sumará 1 a i */
 
-
-            if (i % 2 == 0)
+            if (i % 2 == 0) // Si la i es número PAR 
             {
-                for (let j = 0; j < filas; j = j + 1)
+                for (let j = 0; j < filas; j = j + 1) // Creamos variable j: será el número del bucle2 para filas IMPARES
+        /* j es 0
+        la j tiene que ser MENOR al número de filas introducidas por el usuario
+        al acabar el bucle se sumará 1 a j */
                 {
-                    if (j % 2 == 0)
+                    if (j % 2 == 0) // Si la j es PAR
                     {
                             resultadox += "X"
                     }
-                    else
+                    else // Si la j es IMPAR
                     {
                         resultadox += "O"
                     }
                 }
                 console.log (resultadox)
-                resultadox = ""
+                resultadox = "" // Al acabar el bucle2 de la fila 26 limpiamos el resultadox
             }
-        else
+        else // Si la i es número IMPAR
         {
-            for (let j = 0; j < filas; j = j + 1) {
-                if (j % 2 == 0){
+            for (let j = 0; j < filas; j = j + 1) // Creamos variable j: será el número del bucle3 para filas PARES
+        /* j es 0
+        la j tiene que ser MENOR al número de filas introducidas por el usuario
+        al acabar el bucle se sumará 1 a j */
+            {
+                if (j % 2 == 0) // Si la j es PAR
+                {
                     resultadoy += "O"
                 }
-                else{
+                else // Si la j es IMPAR
+                {
                     resultadoy += "X"
                 }
             }
             console.log (resultadoy)
-            resultadoy = ""
+            resultadoy = "" // Al acabar el bucle2 de la fila 26 limpiamos el resultadoy
         }
 
 
