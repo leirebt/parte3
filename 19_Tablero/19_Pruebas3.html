@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ejercicio tablero</title>
+    <title>Ejercicio tablero 3</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 {
                     if (j % 2 == 0) // Si la j es PAR
                     {
-                            resultadox += "X"
+                            resultadox += "X" // Es lo mismo que resultadox = resultadox + X
                     }
                     else // Si la j es IMPAR
                     {
@@ -38,7 +38,7 @@
                     }
                 }
                 console.log (resultadox)
-                resultadox = "" // Al acabar el bucle2 de la fila 26 limpiamos el resultadox
+                resultadox = "" // Al acabar el bucle2 de la fila 26 limpiamos el resultadox para que en el siguiente bucle de la fila 19 no sume al resultado anterior.
             }
         else // Si la i es número IMPAR
         {
