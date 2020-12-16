@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero Leire</title>
+</head>
+
+<body>
+    <script>
+        window.alert("Tablero con número de caracteres y filas distinto."); // Mensaje principal
+        let caracteres;
+        caracteres = parseInt(prompt("Introduce el número de caracteres para el tablero:")); // Mensaje usuario caracteres
+        let filas;
+        filas = parseInt(prompt("Introduce el número de filas para el tablero:")); // Mensaje usuario filas
+        let filasimpares = "" // Variable vacía para filas impares
+        let filaspares = "" // Variable vacía para filas pares
+
+        for (let i = 0; i < filas; i = i + 1) { // Creamos variable i: será el número de bucle1
+        /* i es 0
+        la i tiene que ser MENOR al número de caracteres introducidos por el usuario
+        al acabar el bucle se sumará 1 a i */
+
+            if (i % 2 == 0) // Si la i es número PAR 
+            {
+                for (let j = 0; j < caracteres; j = j + 1) // Creamos variable j: será el número del bucle2 para filas IMPARES
+        /* j es 0
+        la j tiene que ser MENOR al número de filas introducidas por el usuario
+        al acabar el bucle se sumará 1 a j */
+                {
+                    if (j % 2 == 0) // Si la j es PAR
+                    {
+                            filasimpares += "X"
+                    }
+                    else // Si la j es IMPAR
+                    {
+                        filasimpares += "O"
+                    }
+                }
+                console.log (filasimpares)
+                filasimpares = "" 
+            }
+        else // Si la i es número IMPAR
+        {
+            for (let j = 0; j < caracteres; j = j + 1) // Creamos variable j: será el número del bucle3 para filas PARES
+        /* j es 0
+        la j tiene que ser MENOR al número de filas introducidas por el usuario
+        al acabar el bucle se sumará 1 a j */
+            {
+                if (j % 2 == 0) // Si la j es PAR
+                {
+                    filaspares += "O"
+                }
+                else // Si la j es IMPAR
+                {
+                    filaspares += "X"
+                }
+            }
+            console.log (filaspares)
+            filaspares = ""
+        }
+        }
+    
+            
+    
+    </script>
+</body>
+
+</html>
